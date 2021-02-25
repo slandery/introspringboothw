@@ -3,13 +3,30 @@
 <head>
 <title>Subscriber Sign-Up</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+body {
+	background-color: powderblue;
+}
+
+h3 {
+	color: lightcoral;
+}
+
+p {
+	color: lightcoral;
+}
+img {
+  width: 100%;
+}
+</style>
 </head>
 <body>
 	<h3>You have submitted!</h3>
 	<p>Thanks for the input!</p>
-	
 	<p th:text="${firstName}" />
-	<p th:text="${lastName}" />
+	<p>Enjoy this cute picture!</p>
+	<img th:src=@{baby.jpg} alt="baby racoon" width = "640" height = "428"/>
+	
 	
 </body>
 </html>
