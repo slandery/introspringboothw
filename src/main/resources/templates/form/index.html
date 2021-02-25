@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Subscriber List</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+body {
+	background-color: lightcoral;
+}
+
+h1 {
+	color: powderblue;
+}
+
+p {
+	color: lightblue;
+}
+</style>
+</head>
+<body>
+	<h1>Intro Homework</h1>
+	<h2>Add info to the form below</h2>
+
+	<form action="#" th:action="@{/}" th:object="${form}"
+		method="post">
+		<table>
+			<tr>
+				<td>First Name:</td>
+				<td><input type="text" th:field="*{firstName}" /></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input type="text" th:field="*{lastName}" /></td>
+			</tr>
+
+			<tr>
+				<td><button type="submit">Submit</button></td>
+			</tr>
+		</table>
+	</form>
+
+
+</body>
+</html>
